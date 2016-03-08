@@ -4,8 +4,10 @@ import medvedev.ilya.example.async.repository.Repository;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
+import javax.ws.rs.core.MediaType;
 
 @Path("/ping")
 public class PingResource {
@@ -16,6 +18,7 @@ public class PingResource {
     }
 
     @GET
+    @Produces(MediaType.TEXT_PLAIN)
     public void ping(@Suspended final AsyncResponse response) {
         repository.getResponse()
                 .thenAccept(response::resume)
