@@ -1,4 +1,4 @@
-package medvedev.ilya.async.example.repository;
+package medvedev.ilya.example.async.repository;
 
 import java.util.concurrent.CompletableFuture;
 

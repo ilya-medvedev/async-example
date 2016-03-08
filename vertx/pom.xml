@@ -13,7 +13,7 @@
     <artifactId>vertx-async-example</artifactId>
 
     <properties>
-        <mainClass>medvedev.ilya.async.example.vertx.Main</mainClass>
+        <mainClass>medvedev.ilya.example.async.vertx.Main</mainClass>
 
         <dependency.vertx.version>3.2.1</dependency.vertx.version>
 

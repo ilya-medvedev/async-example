@@ -1,8 +1,8 @@
-package medvedev.ilya.async.example.vertx.handler;
+package medvedev.ilya.example.async.vertx.handler;
 
 import io.vertx.core.Handler;
 import io.vertx.ext.web.RoutingContext;
-import medvedev.ilya.async.example.repository.Repository;
+import medvedev.ilya.example.async.repository.Repository;
 
 public class PingHandler implements Handler<RoutingContext> {
     private static final int BAD_GATEWAY = 502;

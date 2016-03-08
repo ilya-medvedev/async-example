@@ -1,6 +1,6 @@
-package medvedev.ilya.async.example.dropwizard.resource;
+package medvedev.ilya.example.async.dropwizard.resource;
 
-import medvedev.ilya.async.example.repository.Repository;
+import medvedev.ilya.example.async.repository.Repository;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

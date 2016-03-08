@@ -1,10 +1,10 @@
-package medvedev.ilya.async.example.dropwizard.server;
+package medvedev.ilya.example.async.dropwizard.server;
 
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Environment;
-import medvedev.ilya.async.example.dropwizard.resource.PingResource;
-import medvedev.ilya.async.example.repository.Repository;
+import medvedev.ilya.example.async.dropwizard.resource.PingResource;
+import medvedev.ilya.example.async.repository.Repository;
 
 public class Server extends Application<Configuration> {
     private final Repository repository;

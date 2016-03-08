@@ -13,7 +13,7 @@
     <artifactId>dropwizard-async-example</artifactId>
 
     <properties>
-        <mainClass>medvedev.ilya.async.example.dropwizard.Main</mainClass>
+        <mainClass>medvedev.ilya.example.async.dropwizard.Main</mainClass>
 
         <dependency.dropwizard.version>0.9.2</dependency.dropwizard.version>
 
