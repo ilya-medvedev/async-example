@@ -1,7 +1,7 @@
 package medvedev.ilya.example.async.dropwizard.resource;
 
 import medvedev.ilya.example.async.echo.model.Request;
-import medvedev.ilya.example.async.ping.model.Response;
+import medvedev.ilya.example.async.echo.model.Response;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
