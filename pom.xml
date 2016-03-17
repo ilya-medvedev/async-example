@@ -12,7 +12,8 @@
     <modules>
         <module>vertx</module>
         <module>dropwizard</module>
-        <module>repository</module>
+        <module>ping</module>
+        <module>echo</module>
     </modules>
 
     <properties>

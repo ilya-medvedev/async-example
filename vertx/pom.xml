@@ -23,7 +23,13 @@
     <dependencies>
         <dependency>
             <groupId>medvedev.ilya</groupId>
-            <artifactId>repository</artifactId>
+            <artifactId>ping</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>medvedev.ilya</groupId>
+            <artifactId>echo</artifactId>
             <version>${project.version}</version>
         </dependency>
 

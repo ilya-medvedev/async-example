@@ -1,4 +1,6 @@
-package medvedev.ilya.example.async.repository;
+package medvedev.ilya.example.async.ping;
+
+import medvedev.ilya.example.async.ping.model.Response;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
@@ -14,17 +16,17 @@ public class PongRepository implements Repository {
     }
 
     @Override
-    public CompletableFuture<String> getResponse() {
+    public CompletableFuture<Response> getResponse() {
         return CompletableFuture.supplyAsync(PongRepository::responseSupplier, executor);
     }
 
-    private static String responseSupplier() {
+    private static Response responseSupplier() {
         try {
             Thread.sleep(TIMEOUT);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        return RESPONSE;
+        return new Response(RESPONSE);
     }
 }

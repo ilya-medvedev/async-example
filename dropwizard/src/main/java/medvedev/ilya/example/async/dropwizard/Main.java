@@ -1,8 +1,8 @@
 package medvedev.ilya.example.async.dropwizard;
 
 import medvedev.ilya.example.async.dropwizard.server.Server;
-import medvedev.ilya.example.async.repository.PongRepository;
-import medvedev.ilya.example.async.repository.Repository;
+import medvedev.ilya.example.async.ping.PongRepository;
+import medvedev.ilya.example.async.ping.Repository;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

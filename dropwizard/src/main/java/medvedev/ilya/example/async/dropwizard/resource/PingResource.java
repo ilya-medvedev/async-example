@@ -1,6 +1,6 @@
 package medvedev.ilya.example.async.dropwizard.resource;
 
-import medvedev.ilya.example.async.repository.Repository;
+import medvedev.ilya.example.async.ping.Repository;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -18,7 +18,7 @@ public class PingResource {
     }
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public void ping(@Suspended final AsyncResponse response) {
         repository.getResponse()
                 .thenAccept(response::resume)

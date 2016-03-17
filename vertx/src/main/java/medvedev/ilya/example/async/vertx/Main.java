@@ -2,8 +2,8 @@ package medvedev.ilya.example.async.vertx;
 
 import io.vertx.core.Verticle;
 import io.vertx.core.Vertx;
-import medvedev.ilya.example.async.repository.Repository;
-import medvedev.ilya.example.async.repository.PongRepository;
+import medvedev.ilya.example.async.ping.Repository;
+import medvedev.ilya.example.async.ping.PongRepository;
 import medvedev.ilya.example.async.vertx.verticle.MainVerticle;
 
 import java.util.concurrent.Executor;
