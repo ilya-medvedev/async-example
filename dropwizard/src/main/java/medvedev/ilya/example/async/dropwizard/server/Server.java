@@ -17,11 +17,12 @@ public class Server extends Application<Configuration> {
     @Override
     public void run(final Configuration configuration, final Environment environment) throws Exception {
         final PingResource pingResource = new PingResource(repository);
+        final EchoResource echoResource = new EchoResource();
 
         environment.jersey()
                 .register(pingResource);
 
         environment.jersey()
-                .register(EchoResource.class);
+                .register(echoResource);
     }
 }
