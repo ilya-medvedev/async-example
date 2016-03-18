@@ -9,7 +9,7 @@ import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
 
-@Path("/ping")
+@Path("ping")
 public class PingResource {
     private final Repository repository;
 
