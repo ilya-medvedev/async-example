@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/echo")
+@RequestMapping("echo")
 public class Echo {
     @RequestMapping(method = RequestMethod.POST)
     public Response ping(@RequestBody final Request request) {
