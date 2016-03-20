@@ -24,7 +24,7 @@ public class PongRepository implements Repository {
         try {
             Thread.sleep(TIMEOUT);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
         return new Response(RESPONSE);
