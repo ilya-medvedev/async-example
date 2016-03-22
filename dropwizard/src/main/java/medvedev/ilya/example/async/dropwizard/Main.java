@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 public class Main {
     private static final int THREAD_POOL_SIZE = 2;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(final String[] args) throws Exception {
         final Executor executor = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
         final Repository repository = new PongRepository(executor);
 

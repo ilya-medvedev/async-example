@@ -15,7 +15,7 @@ public class Ping {
     private final Repository repository;
 
     @Autowired
-    public Ping(Repository repository) {
+    public Ping(final Repository repository) {
         this.repository = repository;
     }
 

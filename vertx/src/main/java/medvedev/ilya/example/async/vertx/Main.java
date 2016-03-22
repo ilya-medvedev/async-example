@@ -16,7 +16,7 @@ public class Main {
     private static final String VERTX_CACHE_DIR = "vertx-cache";
     private static final int THREAD_POOL_SIZE = 2;
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         final String cacheDir;
         try {
             cacheDir = Files.createTempDirectory(VERTX_CACHE_DIR)
