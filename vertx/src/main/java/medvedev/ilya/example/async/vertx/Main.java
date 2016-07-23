@@ -3,8 +3,8 @@ package medvedev.ilya.example.async.vertx;
 import io.vertx.core.Verticle;
 import io.vertx.core.Vertx;
 import io.vertx.core.impl.FileResolver;
-import medvedev.ilya.example.async.ping.Repository;
-import medvedev.ilya.example.async.ping.PongRepository;
+import medvedev.ilya.example.async.echo.EchoService;
+import medvedev.ilya.example.async.echo.EchoServiceImpl;
 import medvedev.ilya.example.async.vertx.verticle.MainVerticle;
 
 import java.io.IOException;
@@ -28,8 +28,8 @@ public class Main {
         System.setProperty(FileResolver.CACHE_DIR_BASE_PROP_NAME, cacheDir);
 
         final Executor executor = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
-        final Repository repository = new PongRepository(executor);
-        final Verticle mainVerticle = new MainVerticle(repository);
+        final EchoService echoService = new EchoServiceImpl(executor);
+        final Verticle mainVerticle = new MainVerticle(echoService);
 
         Vertx.vertx()
                 .deployVerticle(mainVerticle);

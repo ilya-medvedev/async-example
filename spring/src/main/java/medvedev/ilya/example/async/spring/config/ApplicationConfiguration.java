@@ -1,7 +1,7 @@
 package medvedev.ilya.example.async.spring.config;
 
-import medvedev.ilya.example.async.ping.PongRepository;
-import medvedev.ilya.example.async.ping.Repository;
+import medvedev.ilya.example.async.echo.EchoService;
+import medvedev.ilya.example.async.echo.EchoServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,9 +13,9 @@ public class ApplicationConfiguration {
     private static final int THREAD_POOL_SIZE = 2;
 
     @Bean
-    public Repository repository() {
+    public EchoService echoService() {
         final Executor executor = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
 
-        return new PongRepository(executor);
+        return new EchoServiceImpl(executor);
     }
 }
